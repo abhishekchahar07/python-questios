@@ -1,11 +1,11 @@
-# 1.using recursion print numbers from 1 to n
-
-def print_numbers(n):
-    if n == 0:
-        return
-    print_numbers(n - 1)
-    print(n)
-
-n = int(input())
-print_numbers(n)
-
+s = input()
+vowel = 0
+consonent = 0
+for i in s:
+    if i in 'aeiouAEIOU':
+        vowel += 1
+    else:
+        consonent += 1
+print(vowel)
+print(consonent)
+   

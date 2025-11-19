@@ -1,4 +1,3 @@
+s = input("enter")
 
-#WRITE A RECURSIVE FUNCTIONT NTH FABICONACCI SERIES
-
-
+print(len(s))

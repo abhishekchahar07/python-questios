@@ -1,3 +1,3 @@
 A = "**h*e*l*lo*"
-result = A.strip('*')
+result = A.rstrip('*')
 print(result)
