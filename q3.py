@@ -1,6 +1,10 @@
-n = int(input("enter number"))
+# 1.sing recursion print numbers from n to 1
+def print_numbers(n):
+    if n == 0:
+        return
+    print(n)
+    print_numbers(n - 1)
+    
 
-for i in range(n+1):
-    for j in range(i):
-        print("*", end="")
-    print()
+n = int(input())
+print_numbers(n)

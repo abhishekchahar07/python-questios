@@ -1,6 +1,11 @@
-# given n print n number of stars
+# 1.using recursion print numbers from 1 to n
 
-n = int(input("enter number"))
-for i in range(n):
-    print("*", end="")
-    
+def print_numbers(n):
+    if n == 0:
+        return
+    print_numbers(n - 1)
+    print(n)
+
+n = int(input())
+print_numbers(n)
+

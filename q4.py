@@ -1,6 +1,9 @@
-n = int(input("enter number"))
-
-for i in range(n,1,-1):
-    for j in range(i):
-        print("*", end="")
-    print()
+# find the some of digit of a givin number using recursion
+def sum(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + sum(n // 10)
+n = int(input())
+result = sum(n)
+print(result)
